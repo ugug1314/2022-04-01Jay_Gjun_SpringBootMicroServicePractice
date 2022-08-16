@@ -10,18 +10,17 @@ import com.gjun.domain.Greeting;
 @Configuration
 @ComponentScan
 public class ApplicationConfig {
-
+ 
 	public ApplicationConfig() {
 		System.out.println("Spring 組態佈署...");
 	}
-    //宣告一些可以重覆使用的元件(Spring Bean) Greeting(@Bean Spring Bean)
+	//宣告一些可以重覆使用的元件(Spring Bean) Greeting(@Bean Spring Bean)
 	@Bean("greetings") //指定Bean的名稱
 	public Greeting createGreeting() {
 		Greeting greeting=new Greeting();
-		
-		//注入固定資訊
-		greeting.setWho("張三豐");
-		greeting.setMessage("您好");
+		//注入資料
+		greeting.setWho("Jay");
+		greeting.setMessage("Jay say Hello");
 		return greeting;
 	}
 }

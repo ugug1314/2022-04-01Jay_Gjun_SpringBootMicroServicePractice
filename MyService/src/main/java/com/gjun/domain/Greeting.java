@@ -1,8 +1,10 @@
 package com.gjun.domain;
 
-//Model(MVC-M) 有時考量配合資料庫資料表結構
+//JavaBean
+//Model<MVC-M> 有時考量配合資料庫資料表結構
 //有時考量配合到前端 UI Form Field(Form Bean)
 public class Greeting {
+	//封裝欄位
     private String who;
     private String message;
     //存取子

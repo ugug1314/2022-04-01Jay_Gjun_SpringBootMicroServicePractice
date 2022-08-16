@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/allgreeting/rawdata")
 public class AllGreetingController {
-    
+ 
 	@GetMapping()
 	public String sayHello() {
 		return "Hello World";
 	}
 	@PostMapping()
 	public String sayTwHello() {
-		return "Hello TW";
+		return "吃飽沒";
 	}
 }
